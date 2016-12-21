@@ -78,12 +78,6 @@
 		<p></p>
 	</section>
 
-	<section class="slide">
-		<h2>Проблема</h2>
-		<p>Сервисы умирают, закрываются, оказываются злыми.</p>
-		<p></p>
-	</section>
-
 	<section class="slide services-slide">
 		<img alt="Google Reader" src="pictures/google-reader.png"/>
 		<img class="next" alt="Sourceforge" src="pictures/sourceforge.jpg"/>
@@ -95,41 +89,110 @@
 		<img class="next" alt="" src="pictures/prismatic.png"/>
 		<img class="next" alt="" src="pictures/vk.png"/>
 		<img class="next" alt="" src="pictures/geocities.png"/>
+		<p class="next" style="position: absolute; bottom: 10px; background: rgba(230, 230, 230, .9); padding: .5em;"><a href="https://indieweb.org/site-deaths">indieweb.org/site-deaths</a></p>
 		<style>
 		 .services-slide img {
 			 position: absolute;
-			 top: 20px;
-			 margin-left: -20px;
+			 top: 0px;
+			 left: 0px;
+			 width: 100%;
+			margin-left: 0px;
+			oject-fit: contain;
 		 }
 		 
 		 .services-slide img + img {
-			 margin-left: -10px;
-		 }
-		 .services-slide img + img + img {
-			 margin-left: 0px;
-		 }
-		 .services-slide img + img + img + img {
 			 margin-left: 10px;
 		 }
-		 .services-slide img + img + img + img + img {
+		 .services-slide img + img + img {
 			 margin-left: 20px;
 		 }
-		 .services-slide img + img + img + img + img + img {
+		 .services-slide img + img + img + img {
 			 margin-left: 30px;
 		 }
-		 .services-slide img + img + img + img + img + img + img {
+		 .services-slide img + img + img + img + img {
 			 margin-left: 40px;
 		 }
-		 .services-slide img + img + img + img + img + img + img + img {
+		 .services-slide img + img + img + img + img + img {
 			 margin-left: 50px;
 		 }
+		 .services-slide img + img + img + img + img + img + img {
+			 margin-left: 30px;
+		 }
+		 .services-slide img + img + img + img + img + img + img + img {
+			 margin-left: 20px;
+		 }
 		 .services-slide img + img + img + img + img + img + img + img + img {
-			 margin-left: 60px;
+			 margin-left: 10px;
 		 }
 		 .services-slide img + img + img + img + img + img + img + img + img + img {
-			 margin-left: 70px;
+			 margin-left: 0px;
 		 }
 		</style>
+	</section>
+	<section class="slide">
+		<h2>Что если?</h2>
+		<p>Когда какой-то сервис становится &laquo;центром&raquo;, он становится и единой точкой отказа. </p>
+		<p>Представьте, что закрылся Кодпен. Сколько демок умерло? Сколько постов стали бесполезными?</p>
+		<p>Медиум? Гитхаб? Инстаграм?</p>
+	</section>
+	<section class="slide">
+		<h2 class="shout">It's not paranoia when it's real</h2>
+	</section>
+	<section class="slide">
+		<h2>Это не про &laquo;жить в избушке&raquo;</h2>
+		<p>Сервисы дают нам много хорошего. Иногда они дают нам новые форматы (инстаграм),
+		иногда они дают нам возможность работать, как раньше было сложно или невозможно (гитхаб).</p>
+		<p>Но есть вещи, которые лучше делать самому.</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout">IndieWeb</h2>
+		<p><q>people-focused alternative to the "corporate web"</q></p>
+		<p></p>
+		<style>
+			.shout + p {
+				text-align: center;
+				margin-top: 300px;
+			}
+		</style>
+	</section>
+	
+	<section class="slide">
+		<h2>Контроль над identity</h2>
+		<p>Если тебя знают как friendfeed.com/random_name, то что станет с тобой после его закрытия?</p>
+		<p>Если тебя знают как random-guy.net, то всё зависит только от тебя.</p>
+		<p class="next">В истории веба был такой период (circa 2003).</p>
+	</section>
+
+	<section class="slide">
+		<h2>Резкий переход в реальность</h2>
+		<p>Веб очень быстро перескочил от "незначимой" вещи к тому состоянию, где&nbsp;он&nbsp;&mdash; часть нашей жизни.</p>
+		<p>Это надо принять: веб останется надолго, стоит подумать, как о нём заботиться и о своем месте в нём.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Индивеб? Фрики?</h2>
+		<p>Индивеб &mdash; далеко не первая инициатива в этой области. Federated Social Web.</p>
+		<p>Но их фокус &mdash; на UX и результате, а не килобайтах обсуждений.</p>
+		<p>Челик Тантек. Аарон Пареки. Бен Вердмюллер.</p>
+		<p>Некоторые из них &mdash; в W3C и работают над стандартизацией, в том числе, и индивеб-технологий: WebMention, MicroPub.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Владеть своими данными</h2>
+		<p>Посты, фотографии, код, картинки. Индивеб даёт принципы, из которых, как из конструктора, можно собрать свою "федерализированную" сеть, которая лучше тех, что есть.</p>
+		<p>Автоматический кросс-постинг со своего сайта в соцсети. Сбор фидбека из&nbsp;соцсетей обратно на свой сайт.</p>
+		<pre style="white-space: pre-wrap; line-height: 1; color: #ddd; position: absolute; bottom: -2em; width: 100%;">Я не буду упоминать закон Меткалфа
+Я не буду упоминать закон Меткалфа
+Я не буду упоминать закон Меткалфа
+		</pre>
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>Что уже получилось?</h2>
+		<p>IndieAuth: навроде Sign-in with Facebook/Github/Twitter, позволяющая сделать привязку к этим сервисам непрямой.</p>
+		<p>WebMention: </p>
 	</section>
 	
 	<section class="slide" id="see-more">
