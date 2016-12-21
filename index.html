@@ -176,8 +176,14 @@
 	</section>
 
 	<section class="slide">
-		<h2>Индивеб? Фрики?</h2>
-		<p>Индивеб &mdash; далеко не первая инициатива в этой области. Federated Social Web.</p>
+		<h2>Где ваш веб-дом?</h2>
+		<p>У нас есть две малоприятные альтернативы: полная анонимность и вход в интернет по [корпоративному] паспорту.</p>
+		<p>Но где пространство, которое можно назвать домом?</p>
+	</section>
+
+	<section class="slide">
+		<h2>Индивеб? Те фрики?</h2>
+		<p>Индивеб &mdash; далеко не первая инициатива в этой области. Был, в том числе, Federated Social Web.</p>
 		<p>Но их фокус &mdash; на UX и результате, а не килобайтах обсуждений.</p>
 		<p>Челик Тантек. Аарон Пареки. Бен Вердмюллер.</p>
 		<p>Некоторые из них &mdash; в W3C и работают над стандартизацией, в том числе, и индивеб-технологий: WebMention, MicroPub.</p>
@@ -197,7 +203,65 @@
 	<section class="slide">
 		<h2>Что уже получилось?</h2>
 		<p>IndieAuth: навроде Sign-in with Facebook/Github/Twitter, позволяющая сделать привязку к этим сервисам непрямой.</p>
-		<p>WebMention: </p>
+		<p>WebMention: пингбэки <del>на стероидах^W</del>, но сделанные нормально</p>
+		<p>&laquo;Мероприятия&raquo;: эти люди могут отвечать на приглашения <em>со своих сайтов</em></p>
+	</section>
+
+	<section class="slide">
+		<h2>Как это выглядит?</h2>
+		<p>В качестве основных &laquo;блоков&raquo; используется HTML с микроформатами.</p>
+		<pre style="font-size: .75em;">
+			<code>&lt;main class="<mark>h-card</mark>"></code>
+			<code>  &lt;h1 class="p-name">Tim Marinin&lt;/h1></code>
+			<code>  &lt;p class="p-note"></code>
+			<code>    As seen on &lt;a <mark>rel="me"</mark> href="<em>https://github.com/marinintim</em>">Github&lt;/a>,</code>
+			<code>    &lt;a <mark>rel="me"</mark> href="https://twitter.com/marinintim" rel="me">Twitter</a>, ...</code>
+			<code>  You can write me at <a class="u-email" href="mailto:mt@marinin.xyz">mt@marinin.xyz</a>.</code>
+			<code>  &lt/p></code>
+			<code>&lt;/main></code>
+		</pre>
+
+	</section>
+
+	<section class="slide">
+		<h2>Как это выглядит?</h2>
+		<img src="pictures/indieauth.png">
+	</section>
+	
+	<section class="slide">
+		<h2 class="shout">Вы &mdash;&nbsp;те, кто может сделать это*</h2>
+		<p></p>
+		<p class="note" style="position: absolute; bottom: .4em; font-size: .7em; line-height: 1em;">* если вам это интересно.
+			Имеются противопоказания, посоветуйтесь со своим веб-мастером.
+			Не гарантируется достижение настоящей независимости. Terms and conditions apply. Сопротивление бесполезно. All your base are belong to us. Взрослые &mdash; это мы. Если не мы, то кот.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Вы &mdash; те, кому это нужно</h2>
+		<p>Вы делаете контент. Вы публикуете его в Сети.
+		</p>
+		<p>К сожалению, биты гниют быстрее бумаги. Что останется после нас?
+</p>
+		<p>Я видел фотографии прадеда, увидят ли правнуки мои селфи?</p>
+	</section>
+
+	<section class="slide">
+		<h2>Интернет-архив</h2>
+		<p>Вы, конечно, про них слышали. Wayback machine. #250 в мире, 150 человек в штате.</p>
+		<p>Как и Википедия, им тоже нужны деньги.</p>
+	</section>
+
+	<section class="slide" style="background: #000;">
+		<img style="width: 100%; position: absolute; left: 0; bottom: 0; object-fit: contain; z-index: -2;" alt="" src="pictures/bladerunner.jpg"/>
+		<h2 style="color: #fff; margin-top: 4em; text-shadow: 3px 1px 3px #000; ">Будущее?</h2>
+		<p></p>
+		<p></p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout" style="font-size: 100px;">протоколы > продукты</h2>
+		<p style="position: absolute; bottom: 50px; max-width: 28em; margin: 0 auto; left: 0; right: 0; text-align: center">Сложно представить колонию на Марсе, которая переписывается с Землёй через Слак. Через почту &mdash; легко.</p>
+		<p></p>
 	</section>
 	
 	<section class="slide" id="see-more">
