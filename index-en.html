@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Indieweb, microformats, and web archeology</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>Indieweb, microformats, and web archeology</h1>
+		<p>Tim Marinin, <a href="https://twitter.com/marinintim">@marinintim</a>, <a href="http://marinin.xyz">marinin.xyz</a>. 2016.</p>
+	</header>
+	<section class="slide" id="cover">
+		<h2>Indieweb, microformats, and web archeology</h2>
+		<p>Brought to you by <a href="http://marinin.xyz">Tim Marinin</a></p>
+		<img src="pictures/cover.jpg" alt="" class="cover w">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+		 #cover {
+			 background: #000;
+		 }
+		 #cover h2 {
+			 margin:30px 0 0;
+			 color:#FFF;
+			 text-align:left;
+			 font-size:120px;
+		 }
+		 #cover p {
+			 margin:10px 0 0;
+			 text-align:left;
+			 color:#FFF;
+			 font-style:italic;
+			 font-size:30px;
+		 }
+		 #cover p a {
+			 color:#FFF;
+		 }
+		 #cover img {
+			 opacity: .5;
+		 }
+		</style>
+	</section>
+	<section class="slide who-am-i">
+		<h2>Who am i</h2>
+		<img src="pictures/me.jpg" class="w">
+		<p>Tim Marinin, <a href="http://marinin.xyz">marinin.xyz</a>.</p>
+		<p>Software Engineer @ EPAM. I organize <a href="http://nodeschool.io">NodeSchool SPb</a>.</p>
+		<style>
+		 .who-am-i img {
+			 max-width: 400px;
+			 float: right;
+		 }
+		</style>
+	</section>
+	<section class="slide">
+		<h2>Now</h2>
+		<p>We take for granted a multitude of services we're using.</p>
+		<p>Github, VK, Instagram, Medium, Twitter, Swarm&mdash;all these are web services focused on creating and consuming content.
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>Now</h2>
+		<p>Your idenitity is controlled by services of big companies.</p>
+		<p>Preservation and <em>availability</em> of your content is controlled by services of big and not so big companies.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Now</h2>
+		<p>This is unconsciousness. I hand over my data to companies without thinking about what would happen to it in the future.
+		  I don't control who could see it and how long would it be stored.
+		</p>
+	</section>
+
+	<section class="slide services-slide">
+		<img alt="Google Reader" src="pictures/google-reader.png"/>
+		<img class="next" alt="Sourceforge" src="pictures/sourceforge.jpg"/>
+		<img class="next" alt="" src="pictures/myspace.jpg"/>
+		<img class="next" alt="" src="pictures/friendfeed.png"/>
+		<img class="next" alt="" src="pictures/livejournal.jpg"/>
+		<img class="next" alt="" src="pictures/vine.png"/>
+		<img class="next" alt="" src="pictures/facebook.png"/>
+		<img class="next" alt="" src="pictures/prismatic.png"/>
+		<img class="next" alt="" src="pictures/vk.png"/>
+		<img class="next" alt="" src="pictures/geocities.png"/>
+		<p class="next" style="position: absolute; bottom: 10px; background: rgba(230, 230, 230, .9); padding: .5em;"><a href="https://indieweb.org/site-deaths">indieweb.org/site-deaths</a></p>
+		<style>
+		 .services-slide img {
+			 position: absolute;
+			 top: 0px;
+			 left: 0px;
+			 width: 100%;
+			margin-left: 0px;
+			oject-fit: contain;
+		 }
+		 
+		 .services-slide img + img {
+			 margin-left: 10px;
+		 }
+		 .services-slide img + img + img {
+			 margin-left: 20px;
+		 }
+		 .services-slide img + img + img + img {
+			 margin-left: 30px;
+		 }
+		 .services-slide img + img + img + img + img {
+			 margin-left: 40px;
+		 }
+		 .services-slide img + img + img + img + img + img {
+			 margin-left: 50px;
+		 }
+		 .services-slide img + img + img + img + img + img + img {
+			 margin-left: 30px;
+		 }
+		 .services-slide img + img + img + img + img + img + img + img {
+			 margin-left: 20px;
+		 }
+		 .services-slide img + img + img + img + img + img + img + img + img {
+			 margin-left: 10px;
+		 }
+		 .services-slide img + img + img + img + img + img + img + img + img + img {
+			 margin-left: 0px;
+		 }
+		</style>
+	</section>
+	<section class="slide">
+		<h2>What if?</h2>
+		<p>When one service becomes the "center", it becomes the single point of failure.</p>
+		<p>Imagine that Codepen is closed. How many demos would die? How many posts would become useless?</p>
+		<p>Medium? Github? Instagram?</p>
+	</section>
+	<section class="slide">
+		<h2 class="shout">It's not paranoia when it's real</h2>
+	</section>
+	<section class="slide">
+		<h2>This is not about "living in the shelter"</h2>
+		<p>Services do give us many benefits. Sometimes they bring us new formats (Instagram), sometimes
+		  they allow us to work as we never did before (Github).</p>
+		<p>But there are things that are best done yourself.</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout">IndieWeb</h2>
+		<p><q>people-focused alternative to the "corporate web"</q></p>
+		<p></p>
+		<style>
+			.shout + p {
+				text-align: center;
+				margin-top: 300px;
+			}
+		</style>
+	</section>
+
+	<section class="slide" style="background: #000;">
+		<img style="position: absolute; width: 100%; bottom: 0; left: 0; object-fit: contain; z-index: -2;" src="pictures/mad-as-hell.jpg">
+		<h2 style="color: #fff; text-shadow: 1px 0px 5px #000; position: absolute; bottom: 20px;">I'm as mad as hell <nobr>and I'm not going to take this anymore!</nobr></h2>
+	</section>
+	
+	<section class="slide">
+		<h2>Control over identity</h2>
+		<p>If everyone knows you as friendfeed.com/random_name, what would happend when it closes?</p>
+		<p>If everyone knows you as random-guy.net, everything is in your own hands.</p>
+		<p class="next">History of the Web already had seen this (circa 2003).</p>
+	</section>
+
+	<section class="slide">
+		<h2>Jumping to reality</h2>
+		<p>Web moved very fast from "insignificant" thing to being important part of our life.</p>
+		<p>You have to accept it: web is here to stay, we should think how to care about it and about our place in it.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Where is your web home?</h2>
+		<p>We have two unpleasant alternatives: full anonymity and entering the web via [corporate] passport.</p>
+		<p>But where is the place what you could call home?</p>
+	</section>
+
+	<section class="slide">
+		<h2>Indieweb? Those freaks?</h2>
+		<p>Indieweb is not the first initiative in this space. There was, for example, Federated Social Web.</p>
+		<p>But their focus is on UX and results, not kilobytes of email discussions.</p>
+		<p>Tantek Celik. Aaron Parecki.</p>
+		<p>Some of them work at W3C, among other things, at standartization of Indieweb technologies: WebMention, MicroPub.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Own your data</h2>
+		<p>Posts, photos, code, pictures. Indieweb gives you principles from which you could build your own "federated" social network, which
+		  could be better than all of the existing ones.</p>
+		<p>Automatic crossposting from your site to social networks. Gathering feedback from social networks to your site.</p>
+		<pre style="white-space: pre-wrap; line-height: 1; color: #ddd; position: absolute; bottom: -2em; width: 100%;">I will not mention Metcalf's law
+I will not mention Metcalf's law
+I will not mention Metcalf's law
+I will not mention Metcalf's law
+		</pre>
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>What's already working?</h2>
+		<p>IndieAuth: it's like Sign-in with Facebook/Github/Twitter, making the connection to these services indirect.</p>
+		<p>WebMention: pingbacks <del>on steroids^W</del>, done right.</p>
+		<p>&laquo;Events&raquo;: these people could respond to invites <em>from their own sites</em></p>
+	</section>
+
+	<section class="slide">
+		<h2>What it looks like?</h2>
+		<p>HTML with microformats as building blocks.</p>
+		<pre style="font-size: .75em;">
+			<code>&lt;main class="<mark>h-card</mark>"></code>
+			<code>  &lt;h1 class="p-name">Tim Marinin&lt;/h1></code>
+			<code>  &lt;p class="p-note"></code>
+			<code>    As seen on &lt;a <mark>rel="me"</mark> href="<em>https://github.com/marinintim</em>">Github&lt;/a>,</code>
+			<code>    &lt;a <mark>rel="me"</mark> href="https://twitter.com/marinintim" rel="me">Twitter</a>, ...</code>
+			<code>  You can write me at <a class="u-email" href="mailto:mt@marinin.xyz">mt@marinin.xyz</a>.</code>
+			<code>  &lt/p></code>
+			<code>&lt;/main></code>
+		</pre>
+
+	</section>
+
+	<section class="slide">
+		<h2>What it looks like?</h2>
+		<img src="pictures/indieauth.png">
+	</section>
+	
+	<section class="slide">
+		<h2 class="shout">You are the ones who could do it*</h2>
+		<p></p>
+		<p class="note" style="position: absolute; bottom: .4em; font-size: .7em; line-height: 1em;">* if you are interested in it.
+			There are contraindications, consult your web master.
+			No actual independence <br>is guaranteed. Terms and conditions apply. Resistance is futile. All your base are belong to us. We are< the adults now. If not we, then meawho.</p>
+	</section>
+
+	<section class="slide">
+		<h2>You are the ones who needs it</h2>
+		<p>You are creating content. You publish it on the Web.
+		</p>
+		<p>Sadly, bits rote faster than paper. What would remain after we'd gone?
+</p>
+		<p>I've seen photos of my grandgrandpa. Would my grandgrandchildren see my selfies?</p>
+	</section>
+
+	<section class="slide">
+		<h2>Internet Archive</h2>
+		<p>Obviously, you heard of them. Wayback machine. #250 in the world with 150 in staff.</p>
+		<p>And like Wikipedia, they also need your donations.</p>
+	</section>
+
+	<section class="slide" style="background: #000;">
+		<img style="width: 100%; position: absolute; left: 0; bottom: 0; object-fit: contain; z-index: -2;" alt="" src="pictures/bladerunner.jpg"/>
+		<h2 style="color: #fff; margin-top: 4em; text-shadow: 3px 1px 3px #000; ">Future?</h2>
+		<p></p>
+		<p></p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout" style="font-size: 100px;">protocols > products</h2>
+		<p style="position: absolute; bottom: 50px; max-width: 28em; margin: 0 auto; left: 0; right: 0; text-align: center">I can't imagine Mars colony chatting with Earth in Slack.<br>But what they use email and complain about it&mdash;with ease.</p>
+		<p></p>
+	</section>
+	
+	<section class="slide" id="see-more">
+		<h2 class="shout">
+			<img src="pictures/logo.svg" alt="Shower logo">
+			<a href="https://github.com/marinintim/indiweb-slides">marinintim/indieweb-slides</a>
+		</h2>
+		<style>
+			#see-more h2 {
+				font-size:80px
+				}
+			#see-more img {
+				width:0.72em;
+				height:0.72em;
+				}
+		</style>
+	</section>
+	<p class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</p>
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+</body>
+</html>
